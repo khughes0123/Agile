@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace Agile.Data
 {
-    public class Movie
+    public class Show
     {
-        [Key]
-        public int MovieId { get; set; }
+        public int ShowId { get; set; }
 
         [Required]
         public string Title { get; set; }
@@ -20,5 +19,7 @@ namespace Agile.Data
         public DateTime ReleaseDate { get; set; }
         public List<Review> Reviews { get; set; } = new List<Review>();
         public Guid CreaterID { get; set; }
+        public int Episode { get; set; }
+        public int Season { get; set; }
     }
 }
