@@ -56,10 +56,17 @@
   <ItemGroup>
     <Compile Include="MovieCreate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReviewCreate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Agile.Data\Agile.Data.csproj">
+      <Project>{84dcb724-3128-4bc9-8c24-07ffadd1c549}</Project>
+      <Name>Agile.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
