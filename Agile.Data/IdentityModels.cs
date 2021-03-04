@@ -34,9 +34,11 @@ namespace Agile.Data
         }
 
         public DbSet<Movie> Movies { get; set; }
+
         public DbSet<Review> Reviews { get; set; }
-        
-        
+
+        public DbSet<Show> Shows { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
