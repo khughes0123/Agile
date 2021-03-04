@@ -11,7 +11,14 @@ namespace Agile.Data
     {
         [Key]
         public int MovieId { get; set; }
-        public Guid OwnerId { get; set; }
+
+        [Required]
         public string Title { get; set; }
+        [Required]
+        public string Description { get; set; }
+        [Required]
+        public DateTime ReleaseDate { get; set; }
+        public List<Review> Reviews { get; set; } = new List<Review>();
+        public Guid CreaterID { get; set; }
     }
 }
